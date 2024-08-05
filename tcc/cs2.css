@@ -1,0 +1,851 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+    zoom: 75%;
+  
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+ background: transparent;
+    color: #fff;
+    padding: 20px 0;
+}
+.icon-container {
+  max-width: 150px;
+  min-width: 100px;
+  display: flex;
+  gap: 30px;
+  justify-content: right;
+  margin-top: -10px;
+  margin-left: -40px;
+ 
+}
+
+.icon {
+  font-size: 40px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #1500ff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--cor-texto);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    max-width: 100%;
+    height: 100px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+.logo img:hover{
+    transform: translateY(-5px); 
+   
+
+}
+@media screen and (max-width: 490px) {
+    .logo img {
+        display: none;
+    }
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    padding: 0; /* Removendo o preenchimento lateral */
+}
+
+.menu li {
+    margin-right: 15px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+.menu li:hover{
+    transform: translateY(-5px); 
+
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    zoom: 140%;
+}
+
+.menu a:hover {
+    color: red;
+}
+@media screen and (max-width: 540px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-left: 5px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+      
+    }
+}
+@media screen and (max-width: 320px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-left: 5px;
+        
+    }
+}@media screen and (max-width: 295px) {
+    .menu {
+        justify-content: center; /* Centralizar os itens */
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        margin-left: 5px;
+       
+    }
+}
+@media screen and (max-width: 290px) {
+  .menu {
+      justify-content: center; /* Centralizar os itens */
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      margin-left: 5px;
+      font-size: 12px;
+  }
+}
+@media screen and (max-width: 230px) {
+  .menu {
+      justify-content: center; /* Centralizar os itens */
+      text-align: center;
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      margin-left: 5px;
+      font-size: 8px;
+  }
+}
+
+/* Seção de herói */
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background-color: white;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+
+/* Seção de recursos */
+.features {
+ 
+    padding: 0px 0;
+    text-align: left;
+
+background-color: #201f1ffa;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+   
+  
+}
+
+.feature {
+
+    margin-bottom: 0px;
+   width: 100%; /* Definir a largura de cada recurso para ocupar metade da largura da seção com um espaço entre eles */
+    background-color: rgb(255, 255, 255); /* Cor de fundo preta com opacidade */
+    padding: 150px;/* Espaçamento interno */
+    margin-bottom: 0px; /* Espaçamento inferior */
+     /* Incluir padding e borda no cálculo da largura */
+margin-bottom: -10px;
+  zoom: 115%;
+}
+
+.feature h3 {
+  
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000000;
+    margin-left: 800px;
+    margin-right: 40px;
+   padding-bottom: 16px;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #000000;
+    margin-left: 800px;
+    margin-right: 40px;
+   padding-bottom: -30px;
+
+}
+.feature img{
+ 
+ min-width: 30px;
+ height: auto;
+    margin-bottom: -50px;
+    clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    object-fit: cover;
+    margin-left: 30px;
+    border: solid 5px black;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3), -3px -3px 5px rgba(0,0,0,0.3);
+
+}
+
+#img2{
+ 
+  margin-top: 800px;
+width: 100%;
+height: 200px;
+
+}
+
+
+  @media screen and (max-width: 1400px) {
+    .feature img {
+     display: none;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    .feature {
+     zoom: 50%;
+  padding: 500px;
+   
+  
+ 
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .feature {
+     zoom: 50%;
+     padding: 500px;
+     padding-left: 100px;
+    }
+  }
+
+  
+ 
+
+
+ 
+ 
+  @media screen and (max-width: 1400px) {
+    .feature p{
+
+ 
+  margin-left: -200px;
+     font-size: 30px;
+      zoom: 180%;
+     
+    
+    }
+  }
+
+  
+  @media screen and (max-width: 700px) {
+    .feature p{
+  
+      margin: 0;
+      
+    
+    }
+  }
+
+
+@media screen and (max-width: 768px) {
+    .features {
+       width: auto;
+      
+    
+    }
+  }
+ 
+ 
+  
+  @media screen and (max-width: 500px) {
+    .feature p  {
+       font-size: 35px;
+      
+        /* Em telas menores, ocupar toda a largura disponível */
+    }
+  }
+
+  
+  
+/* Rodapé */
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #555;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social-icons {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.footer-social-icons a:hover {
+  color: #ddd;
+}
+@media screen and (max-width: 765px) {
+  footer {
+   display: none;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-social-icons {
+    justify-content: center;
+  }
+}
+
+.footer2 {
+text-align: center;
+margin: 0;
+align-items: center;
+justify-content: center;
+
+
+
+}
+
+@media screen and (max-width: 30000px) {
+  .footer2 {
+   display: none;
+  }
+}
+@media screen and (max-width: 764px) {
+  .footer2 {
+   display: block;
+  }
+}
+
+.bra {
+  background-color: white;
+  padding: 40px;
+}
+
+.bra img {
+  height: 200px;
+  width: auto;
+background-color: #820000;
+padding: 30px;
+border-radius: 25%;
+box-shadow: 
+/* Sombra Externa */
+10px 10px 15px rgba(0, 0, 0, 0.8),
+/* Sombra Interna */
+inset 5px 5px 10px rgba(0, 0, 0, 0.30);
+}
+
+
+.button {
+  display: block; /* Alterado para block */
+  width: 200px; /* Defina uma largura fixa para os botões */
+  margin: 10px auto; /* Adiciona margem superior e inferior para espaçamento */
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #000000; /* cor de fundo */
+  color: white; /* cor do texto */
+  border: none;
+  margin-right: 2000px;
+}
+
+.button:hover {
+  background-color: #de0606;
+}
+
+.button:active {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width: 1400px) {
+  .feature {
+   display: none;
+  }
+}
+@media screen and (max-width: 5000px) {
+  .bra {
+   display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .bra {
+   display: block;
+  }
+}
+@media screen and (max-width: 3800px) {
+  .bra img {
+  width: 200px;
+  height: 200px;
+  margin-left: 1800px;
+  margin-top: -300px;
+  
+  }
+}
+@media screen and (max-width: 1800px) {
+  .bra img {
+  width: 200px;
+  height: 200px;
+  margin-left: 1000px;
+  margin-top: -300px;
+  
+  }
+}
+@media screen and (max-width: 1000px) {
+  .bra img {
+  width: 200px;
+  height: 200px;
+  margin-left: 750px;
+  margin-top: -300px;
+  
+  }
+}
+@media screen and (max-width: 850px) {
+  .bra img {
+  width: 200px;
+  height: 200px;
+  margin-left: 750px;
+  margin-top: -300px;
+  
+  }
+}
+@media screen and (max-width: 700px) {
+  .bra img {
+  width: 120px;
+  height: 120px;
+  margin-left: 300px;
+  margin-bottom: -120px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .second {
+ zoom: 80%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .second {
+ zoom: 75%;
+ font-size: 20px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 990px) {
+  .second video {
+
+ font-size: 20px;
+margin-bottom: -200px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .second {
+ zoom: 70%;
+ font-size: 20px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 990px) {
+  .second video {
+
+ font-size: 20px;
+margin-bottom: -100px;
+  }
+}
+@media screen and (max-width: 865px) {
+  .second {
+ zoom: 65%;
+ font-size: 20px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 805px) {
+  .second {
+ zoom: 60%;
+ font-size: 25px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 795px) {
+  .second {
+ zoom: 50%;
+ font-size: 25px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 695px) {
+  .second {
+ zoom: 40%;
+ font-size: 45px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 655px) {
+  .second {
+ zoom: 40%;
+ font-size: 35px;
+ 
+ 
+  }
+}
+@media screen and (max-width: 655px) {
+  .second video {
+margin-bottom: -280px;
+zoom: 110%;
+margin-left: -130px;
+ 
+  }
+}
+@media screen and (max-width: 455px) {
+  .second video {
+margin: 0 auto;
+zoom: 140%;
+ margin-left: 100px;
+ 
+  }
+}
+@media screen and (max-width: 550px) {
+  .second {
+ zoom: 30%;
+ font-size: 50px;
+ 
+ 
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .second p {
+display: none;
+
+ 
+  }
+}
+.second h1{
+margin: 0;
+padding-top: 200px;
+text-align: center;
+font-size: 65px;
+}
+
+@media screen and (max-width: 1500px) {
+  .second h1 {
+display:none;
+ 
+ 
+  }
+}
+@media screen and (max-width: 450px) {
+  .second h1 {
+display: block;
+ 
+ 
+  }
+}
+
+  
+
+.part3{
+  padding: 500px;
+background-image: url(road-between-woods-en-3840x2160.jpg);
+background-size: cover; /* Faz a imagem cobrir todo o elemento */
+background-attachment: fixed; /* Faz o background ficar estático */
+background-position: center;
+transition: background-size 0.5s ease; /* Efeito de transição */
+}
+
+
+.part3 {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Altura do contêiner igual à altura da viewport */
+}
+@media screen and (max-width: 795px) {
+  .part3 {
+ zoom: 50%;
+ 
+ 
+ 
+  }
+}
+/* Estilo do botão */
+.button2 {
+margin: 0;
+  padding: 35px 130px;
+  font-size: 26px;
+  color: white;
+  background-color: #007BFF; /* Cor de fundo azul */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Efeito de transição */
+}
+
+/* Estilo do botão ao passar o mouse */
+.button2:hover {
+  background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
+/*--------------------------------------------------------------- SOBRE
+  /* Seção de recursos */
+.features2 {
+  padding: 0px 0;
+  text-align: center;
+ 
+  
+background-color: #201f1ffa;
+}
+
+.features2 h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #fff;
+ 
+
+}
+
+.feature2 {
+  margin-bottom: 0px;
+width: 100%; /* Definir a largura de cada recurso para ocupar metade da largura da seção com um espaço entre eles */
+  background-color: rgb(255, 255, 255); /* Cor de fundo preta com opacidade */
+  padding:25px; /* Espaçamento interno */
+  margin-bottom: 0px; /* Espaçamento inferior */
+  box-sizing: border-box; /* Incluir padding e borda no cálculo da largura */
+
+}
+
+.feature2 h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #000000;
+
+
+ padding-bottom: 16px;
+}
+
+.feature2 p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 8);
+  background-color: black;
+
+ padding-bottom: 30px;
+ border-radius: 5px;
+
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+  .feature2 p  {
+     font-size: 15px;
+    
+      /* Em telas menores, ocupar toda a largura disponível */
+  }
+}
+
+
+@media screen and (max-width: 250px) {
+  .feature2 img {
+     
+    
+    zoom: 50%;
+  
+    height: auto;
+      /* Em telas menores, ocupar toda a largura disponível */
+  }
+}
+
+  
+/*--------------------------------------------------------------- DÚVIDAS
+  */ 
+  .faq {
+    background-color: white;  /* background: url(https://th.bing.com/th/id/OIP.KkclKhbEI5CtMlf-so0kOgAAAA?rs=1&pid=ImgDetMain);/*
+     /* Ajuste o valor do desfoque conforme necessário */
+     padding: 40px 0; /* Redução do espaço ao redor da seção */
+     text-align: center;
+     
+    
+ }
+ 
+ 
+ .faq-item {
+     margin-bottom: 30px; /* Redução do espaço entre os itens */
+    
+ }
+ 
+ .faq-question {
+     cursor: pointer;
+     padding: 20px;
+     border-radius: 16px;
+     background-color:#000000;
+     color:white;
+     width: 600px;
+     align-items: center;
+      margin: 0 auto;
+    
+ }
+ 
+ .faq-answer {
+    
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.5s ease;
+     color: #000;
+ }
+.imgfaqe{
+
+  margin-left: 1000px;
+   margin-top: -500px; 
+   display: inline-block;
+  
+}
+
+@media screen and (max-width: 700px) {
+  .faq  {
+     
+ height: auto;
+zoom: 50%;
+font-size: 28px;
+  
+  }
+}
+@media screen and (max-width: 400px) {
+  .faq  {
+     
+ height: auto;
+zoom: 40%;
+font-size: 28px;
+  
+  }
+}
+@media screen and (max-width: 295px) {
+  .faq  {
+     
+ height: auto;
+zoom:28%;
+font-size: 38px;
+  
+  }
+}
+
+ @media screen and (max-width: 1060px) {
+  .imgfaqe  {
+     
+    display: none;
+  
+  }
+}
+
+
+/*-------------------------------------------------------------CONTATO
+  */ 
